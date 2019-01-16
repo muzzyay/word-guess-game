@@ -19,9 +19,9 @@
     />
   </head>
   <body>
-    <div class="container bg-dark text-white text-center justify-content-around">
-      <br><br><br><br><br><br>
-      <div class="row">
+    <div class="container bg-dark text-white text-center justify-content-around border border-white rounded">
+      <br><br><br><br>
+      <div class="row border border-white rounded">
         <div class="col">
           <div class="row">
             <div class="col">
@@ -46,15 +46,26 @@
           </div>
           <div class="row">
             <div class="col">
-              <h2 style="font-family: 'B612', sans-serif;">Current Word</h2>
+              <h2 style="font-family: 'B612', sans-serif;">Guess the Country</h2>
               <br>
 
               <h1
-                class="text-capitalize"
+                class="text-uppercase"
                 style="font-family: 'B612', sans-serif;"
                 id="letters-text"
                 >_ _ _ _ _ _ _</h1
               >
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col border border-white rounded">
+              <h2>Number of Guesses Remains <hr class="bg-white"> <span id="remaining-text">10</span></h2>
+
+            </div>
+            <div class="col border border-white rounded text-uppercase">
+              <h2>Used Letters <hr class="bg-white"> <span id="guessed-letters-text">None</span></h2>
+
             </div>
           </div>
           <br><br>
@@ -65,10 +76,10 @@
               </h2>
             </div>
           </div>
-          <br><br><br><br><br>
+          
         </div>
       </div>
-      
+      <br><br><br><br>
     </div>
 
     <script src="assets/javascript/game.js"></script>

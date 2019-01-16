@@ -44,7 +44,7 @@ console.log(pickedCountry);
 
 // runs the code below when a key is pressed
 document.onkeyup = function(event) {
-  var userLetter = event.key;
+  var userLetter = event.key.toLowerCase();
   console.log(userLetter);
 
   //   checks if the key is entered before if true exits the function
