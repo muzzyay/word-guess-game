@@ -12,19 +12,82 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=B612|Gloria+Hallelujah"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Press Any Key to get started</h1>
-    <br />
-    <h1>Wins: <span id="wins-text"></span></h1>
-    <br>
-    <h1>
-      Current word: <span id="letters-text">_ _ _ _ _ _ _</span>
-    </h1>
-    <br />
-    <h2>Number of Guesses remaining: <span id="remaining-text">10</span></h2>
-    <br />
-    <h2>Letters already guessed: <span id="guessed-letters-text"></span></h2>
+    <div class="container">
+      <div class="jumbotron text-center bg-primary text-white">
+        <h1 class="display-4" style="font-family: 'B612', sans-serif;">
+          COUNTRY WORD GAME
+        </h1>
+        <p class="lead" style="font-family: 'Gloria Hallelujah', cursive;">
+          Press Any Key to Start
+        </p>
+      </div>
+      <div class="row text-center justify-content-center">
+        <div class="col-6">
+          <h1 style="font-family: 'B612', sans-serif;">
+            Wins: <span id="wins-text">0</span>
+          </h1>
+          <br />
+          <br />
+
+          <h1 style="font-family: 'B612', sans-serif; font-size: 80px;">
+            Current word
+          </h1>
+
+          <span
+            style="font-family: 'B612', sans-serif; font-size: 80px;"
+            id="letters-text"
+            >_ _ _ _ _ _ _</span
+          >
+          <br>
+          <br>
+        </div>
+      </div>
+      <div
+        class="text-danger row text-center"
+        style="font-family: 'Gloria Hallelujah', cursive;"
+      >
+        <div class="col">
+          <div class="card bg-primary">
+            <div class="card-body">
+              <h3 class="card-title">Number of Guesses remaining</h3>
+              <hr />
+              <h3 class="card-text"><span id="remaining-text">10</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-primary">
+            <div class="card-body">
+              <h3
+                class="card-title"
+                style="font-family: 'Gloria Hallelujah', cursive;"
+              >
+                Letters already guessed
+              </h3>
+              <hr />
+              <h3 class="card-text"><span id="guessed-letters-text">None</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="jumbotron text-center bg-primary text-white">
+        <h1 class="display-4" style="font-family: 'B612', sans-serif;">
+          COUNTRY WORD GAME
+        </h1>
+        <p class="lead" style="font-family: 'Gloria Hallelujah', cursive;">
+          Press Any Key to Start
+        </p>
+      </div>
+    </div>
 
     <script src="assets/javascript/game.js"></script>
   </body>
