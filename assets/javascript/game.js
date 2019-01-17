@@ -81,6 +81,8 @@ document.onkeyup = function(event) {
     if (game.letters[i] === pickedCountry[i]) {
       wincheck++;
       if (wincheck === 7) {
+
+        
         alert("You Won");
         game.wins++;
         game.reset();
